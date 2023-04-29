@@ -9,4 +9,13 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, opts)      -- override the options using lazy.nvim
+      opts.section.header.val = { -- change the header section value
+        "    ck0t0 ",
+      }
+    end,
+  },
+  { "machakann/vim-sandwich", enabled = true },
 }
